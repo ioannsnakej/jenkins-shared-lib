@@ -1,6 +1,6 @@
 def login() {
-  withCredentials([usernamePassword(credentialsId: 'docker-creds', usernameVariable: 'username', passwordVariable: 'password')]) {
-    sh "docker login -u ${username} -p ${password}"
+withCredentials([usernamePassword(credentialsId: 'docker_token', usernameVariable: 'DOCKER_USER', passwordVariable: 'docker_token')]) {
+    sh "docker login -u ${DOCKER_USER} -p ${DOCKER_TOKEN}"
   }
 }
 
