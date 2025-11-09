@@ -7,7 +7,7 @@ def call(String prefix, String botToken, String chatId) {
   def msg = tmpl
         .replace('${jobName}', jobName)
         .replace('${buildStatus}', buildStatus)
-        .replace('${buildUrl}', buildUrl
+        .replace('${buildUrl}', buildUrl)
   ssh """
     curl -s -X POST https://api.telegram.org/bot${botToken}/sendMessage \
     -d chat_id=${chatId} \
