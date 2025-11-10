@@ -1,2 +1,3 @@
-Build ${jobName} #${buildStatus}
-${prefix} [Job Link] (${buildUrl})
+${prefix} *${jobName}* #${buildNumber}
+Status: *${buildStatus}*
+[Open Job](${buildUrl})

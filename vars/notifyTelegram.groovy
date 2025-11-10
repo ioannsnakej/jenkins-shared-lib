@@ -5,6 +5,7 @@ def call(String prefix, String botToken, String chatId) {
 
   def tmpl = libraryResource 'msgTmpl.md'
   def msg = tmpl
+        .replace('${prefix}', prefix)
         .replace('${jobName}', jobName)
         .replace('${buildStatus}', buildStatus)
         .replace('${buildUrl}', buildUrl)
