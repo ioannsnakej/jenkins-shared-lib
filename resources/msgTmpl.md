@@ -1,3 +1,3 @@
 ${prefix} *${jobName}* #${buildNumber}
 Status: *${buildStatus}*
-[Open Job](${buildUrl})
+[Job Link](${buildUrl})
